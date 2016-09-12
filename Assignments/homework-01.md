@@ -9,14 +9,18 @@ http://67.205.143.154/
 ## Phpmyadmin Link
 http://205.143.154/phpmyadmin
 
-```Table Create statements```
+## Table Create statements
 
-```gift_options.sql```
+## gift_options.sql
+
+```
+
 CREATE TABLE IF NOT EXISTS `gift_options` (
        	`allowGiftWrap` Boolean  NOT NULL,
        	`allowGiftMessage` Boolean NOT NULL,
        	`allowGiftReceipt` Boolean NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+'''
 
 '''To add Primary key'''
 ALTER TABLE `gift_options` ADD PRIMARY KEY ( `allowGiftWrap` ) ;
