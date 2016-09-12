@@ -13,7 +13,8 @@ http://205.143.154/phpmyadmin
 
 ## gift_options.sql
 
-``` CREATE TABLE IF NOT EXISTS `gift_options` (
+``` 
+CREATE TABLE IF NOT EXISTS `gift_options` (
        	`allowGiftWrap` Boolean  NOT NULL,
        	`allowGiftMessage` Boolean NOT NULL,
        	`allowGiftReceipt` Boolean NOT NULL
