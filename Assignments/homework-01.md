@@ -97,6 +97,7 @@ CREATE TABLE IF NOT EXISTS `products` (
 ```
 
 ## To add Primary key
-```ALTER TABLE `products` 
+```
+ALTER TABLE `products` 
 ADD PRIMARY KEY ( `itemId` , `parentItemId` ) ;
 ```
