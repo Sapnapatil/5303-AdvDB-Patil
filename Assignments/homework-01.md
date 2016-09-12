@@ -21,9 +21,6 @@ CREATE TABLE IF NOT EXISTS `gift_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
 
-## To add Primary key
-``` ALTER TABLE `gift_options` ADD PRIMARY KEY ( `allowGiftWrap` ) ; ```
-
 ## image_entities.sql
 ```
 CREATE TABLE IF NOT EXISTS `image_entities` (
