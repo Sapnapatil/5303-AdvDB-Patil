@@ -13,19 +13,18 @@ http://205.143.154/phpmyadmin
 
 ## gift_options.sql
 
-```
-
-CREATE TABLE IF NOT EXISTS `gift_options` (
+``` CREATE TABLE IF NOT EXISTS `gift_options` (
        	`allowGiftWrap` Boolean  NOT NULL,
        	`allowGiftMessage` Boolean NOT NULL,
        	`allowGiftReceipt` Boolean NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 '''
 
-'''To add Primary key'''
-ALTER TABLE `gift_options` ADD PRIMARY KEY ( `allowGiftWrap` ) ;
+## To add Primary key
+''' ALTER TABLE `gift_options` ADD PRIMARY KEY ( `allowGiftWrap` ) ; '''
 
-```image_entities.sql```
+## image_entities.sql
+'''
 CREATE TABLE IF NOT EXISTS `image_entities` (
         `thumbnailImage` varchar(149) NOT NULL,
         `mediumImage` varchar(149) NOT NULL,
@@ -33,8 +32,12 @@ CREATE TABLE IF NOT EXISTS `image_entities` (
         `entityType` varchar(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-'''To add Primary key'''
+'''
+
+## To add Primary key
+'''
 ALTER TABLE `image_entities` ADD PRIMARY KEY ( `entityType` ) ;
+'''
 
 ```market_place_price.sql```
 CREATE TABLE IF NOT EXISTS `market_place_price` (
